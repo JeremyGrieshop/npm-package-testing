@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ComponentA from "packageA";
+import {ComponentA} from "packageA";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ComponentA />
         <a
           className="App-link"
           href="https://reactjs.org"
