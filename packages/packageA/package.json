@@ -1,0 +1,24 @@
+{
+  "name": "packageA",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rimraf lib && NODE_ENV=production babel src --out-dir lib --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1",
+    "rimraf": "^2.6.3"
+  }
+}
